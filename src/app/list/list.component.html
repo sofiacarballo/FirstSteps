@@ -1,0 +1,11 @@
+<p>list works!</p>
+<div class=list *ngFor='let student of student; index as i'>
+  {{ i+1 }}.{{student.name}}
+  {{student.surname}}
+  <br><br>
+  Languagues:
+  <br><br>
+  <li *ngFor='let languague of student.languague'>
+    {{languague}}
+  </li>
+</div>
