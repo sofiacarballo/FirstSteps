@@ -1,0 +1,12 @@
+<p>search student works!</p>
+<label> Search a student by name: <input [(ngModel)]=name></label>
+
+<br>
+<h2>{{name}}</h2>
+
+<container-element class="response" [ngSwitch]='name'>
+<!-- <div *ngSwitchCase='Vicente'> <img src="FirstSteps\src\assets\Vicente.jpg"></div>
+<div *ngSwitchCase='Elena'> Popi</div>-->
+<div *ngSwitchDefault>Waiting... </div>
+</container-element>
+
